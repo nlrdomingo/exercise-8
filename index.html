@@ -16,10 +16,11 @@
 
       /* Responsive Design Additions */
       /* Mobile View */
-      @media only screen and (min-width: 600px) {
+      @media only screen and (max-width: 599px) {
         body {
-        font-family: "Pacifico", cursive;
-        font-size: 30px;
+          background-color: yellow;
+          font-family: "Pacifico", cursive;
+          font-size: 30px;
         }
 
         p,
@@ -27,13 +28,28 @@
           width: 100%;
         }
       }
-      
-       /* Desktop View */
-      @media only screen and (max-width: 800px) {
-         body {
-        font-family: "Pacifico", cursive;
-        font-size: 30px;
-        background-color: aqua;
+
+      /* Desktop View */
+      @media only screen and (min-width: 600px) {
+        body {
+          background-color: aqua;
+          /* Background color for desktop */
+          font-family: "Pacifico", cursive;
+          font-size: 30px;
+        }
+
+        p {
+          width: 600px;
+          margin: 0 auto;
+          /* Center the paragraph horizontally */
+        }
+
+        img {
+          width: 800px;
+          margin: 0 auto;
+          /* Optional centering for images */
+          display: block;
+          /* Ensures proper centering for block elements */
         }
       }
 
